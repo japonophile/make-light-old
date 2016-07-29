@@ -1,0 +1,14 @@
+{
+  "id": "color_by_numbers",
+  "title": "Color By Numbers",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.on\\([aA]1, colou?r ?= ?red\\)",
+      "text": "Each light on your speaker can make over sixteen million colors! Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a1, color = red) </b></span> to make the first light red. When you are done, press  <span foreground='#ffffff' background='#ff842a'><b> ENTER </b></span> to make a new line."
+    },
+    {
+      "text": "Well done. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  and see your light turn on! What other colors can you make your light?"
+    }
+  ]
+}

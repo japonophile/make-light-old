@@ -1,0 +1,14 @@
+{
+  "id": "let_there_be",
+  "title": "Let There Be Light",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.on\\([cC]5\\)",
+      "text": "Ready to make light? Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span> to turn on your first light. When you are done, press  <span foreground='#ffffff' background='#ff842a'><b> ENTER </b></span> to make a new line."
+    },
+    {
+      "text": "Well done. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  and see your light turn on! Next, change <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> C5 </b></span> to a different number and letter. Look at the letters and numbers around the board for inspiration."
+    }
+  ]
+}

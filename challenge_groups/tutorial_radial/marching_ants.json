@@ -1,0 +1,38 @@
+{
+  "id": "marching_ants",
+  "title": "Marching Ants",
+  "description": "",
+  "content": [
+    {
+      "code": "while true:",
+      "text": "The tiny red, green, and blue lights that make up each pixel aren't easy to see at first, but the right command can help. We’ll turn each of them on in order. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> while true: </b></span> to start a loop."
+    },
+    {
+      "code": "\\tlight\\.all\\(colou?r ?= ?red\\)",
+      "text": "This loop will play each red, green, and blue light in order. First we’ll turn all the red lights on with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.all(color = red) </b></span>."
+    },
+    {
+      "code": "\\tsleep\\(1\\)",
+      "text": "Our program follows orders one after another, so we need to tell it to wait a bit before turning on the next color.  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>"
+    },
+    {
+      "code": "\\tlight\\.all\\(colou?r ?= ?green\\)",
+      "text": "The second light in our pixels are the green light. Turn them all on with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.all(color = green) </b></span>."
+    },
+    {
+      "code": "\\tsleep\\(1\\)",
+      "text": "Add in another sleep command to wait for a second.  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>"
+    },
+    {
+      "code": "\\tlight\\.all\\(colou?r ?= ?blue\\)",
+      "text": "Blue is the final color. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.all(color = blue) </b></span> to turn it on."
+    },
+    {
+      "code": "\\tsleep\\(1\\)",
+      "text": "And one last sleep command. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>"
+    },
+    {
+      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to run your code! Can you see each light jump? Each of the colored lights sit right next to each other with just enough space between to be noticed."
+    }
+  ]
+}

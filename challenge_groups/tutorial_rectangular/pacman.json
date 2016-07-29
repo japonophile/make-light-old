@@ -1,0 +1,18 @@
+{
+  "id": "pacman",
+  "title": "Pacman",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.circle\\(12, *[eE]8, *on\\)",
+      "text": "Let\u2019s use some more shapes to make a picture! Circle works the same way as square - a size, starting location and on/off.\nType  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(12, E8, on) </b></span>"
+    },
+    {
+      "code": "light\\.triangle\\([fF]8, *[hH]5, *[hH]11, *off\\)",
+      "text": "There\u2019s a triangle too! Type  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.triangle(F8, H5, H11, off) </b></span> to make Pacman\u2019s mouth. The three coordinates are the corners of the triangle!"
+    },
+    {
+      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to see your finished Pacman!"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "world": {
+        "id": "tutorial_radial",
+        "title": "The Kano LED Speaker Tutorial",
+        "description": "Light up your Kano with 10 colorful LEDs!",
+        "board_type": "LED Speaker",
+        "display_order": 	1
+    },
+    "challenge_order": [
+      "see_the_light",
+      "light_tour",
+      "color_by_numbers",
+      "all_around",
+      "painted_red",
+      "arcs",
+      "marching_ants"
+    ],
+    "date_added": "2015-12-14T00:00:00.00Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hello_blinky",
+  "title": "Hello blinky",
+  "description": "",
+  "content": [
+    {
+      "code": "while True\\:",
+      "text": "We\u2019ve got the basics down, now let\u2019s put on a blinking light show. We will use a loop, type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> while True: </b></span>"
+    },
+    {
+      "code": "\\tlight\\.on\\([cC]5\\)",
+      "text": "See how your cursor is moved over automatically? You are now in a \u201cloop.\u201d Type  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span>"
+    },
+    {
+      "code": "\\tsleep\\(1\\)",
+      "text": "Let\u2019s wait for a second between flashes. You can tell the computer to wait by typing  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>, which will make the computer wait for one second."
+    },
+    {
+      "code": "\\tlight\\.off\\([cC]5\\)",
+      "text": "We make the lights flash by turning them on, and now turning them off. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off(C5) </b></span>, which turns all the lights off."
+    },
+    {
+      "code": "\\tsleep\\(1\\)",
+      "text": "Finally, should wait one second after the lights turn off before the loop starts over and turns the lights back on. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>."
+    },
+    {
+      "text": "Press <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> and watch your board! What patterns can you make when you give <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on() </b></span> and <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off() </b></span> a different coordinate?"
+    }
+  ]
+}

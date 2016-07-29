@@ -1,0 +1,22 @@
+{
+  "id": "gradients",
+  "title": "Gradients",
+  "description": "",
+  "content": [
+    {
+      "code": "for x in range\\(WIDTH\\)\\:",
+      "text": "You can make a pattern that smoothly goes from light to dark across your board. You'll need to use two loops to draw each row and column of pixels, so type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> for x in range(WIDTH): </b></span>"
+    },
+    {
+      "code": "\tfor y in range\\(HEIGHT\\)\\:",
+      "text": "You're now in the first loop, which will iterate over every column (x value). Now you need to iterate over every y value, so type\n<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> for y in range(HEIGHT): </b></span>"
+    },
+    {
+      "code": "\\t\\tlight\\.on\\(\\(x, *y\\), *x *\\/ *8\\.0\\)",
+      "text": "Now we\u2019ll use the x and y variables from the loops to draw each pixel <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on((x, y), x / 8.0) </b></span>"
+    },
+    {
+      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> to see your gradient! Can you get it to go from top to bottom? Hint, you\u2019ll need to change x to y, and 9 to 14."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "animated_pacman",
+  "title": "Animated Pacman",
+  "description": "",
+  "content": [
+    {
+      "code": "while True\\:",
+      "text": "Time to bring it to life! This time you\u2019ll need a loop. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> while True: </b></span>"
+    },
+    {
+      "code": "\\tlight\\.circle\\(12, *[eE]8, *on\\)",
+      "text": "See how your cursor is moved over automatically? You are now in a \u201cloop.\u201d Draw the body again by typing <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(12, E8, on) </b></span>"
+    },
+    {
+      "code": "\\tlight\\.triangle\\([fF]8, *[hH]5, *[hH]11, *off\\)",
+      "text": "And cut away the mouth by typing\n<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.triangle(F8, H5, H11, off) </b></span>"
+    },
+    {
+      "code": "\\tsleep\\(.5\\)",
+      "text": "Our animation should last half a second, so let\u2019s type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(.5) </b></span>"
+    },
+    {
+      "code": "\\tlight\\.triangle\\([fF]8, *[hH]5, *[hH]11, *on\\)",
+      "text": "Bring the mouth back by typing <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.triangle(F8, H5, H11, on) </b></span>"
+    },
+    {
+      "code": "\\tsleep\\(.5\\)",
+      "text": "Our animation should last half a second, so let\u2019s type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(.5) </b></span>"
+    },
+    {
+      "text": "Press <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> to see your finished Pacman. Waka waka!"
+    }
+  ]
+}

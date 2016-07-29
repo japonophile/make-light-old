@@ -1,0 +1,14 @@
+{
+  "id": "all_lights",
+  "title": "All Of The Lights",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.on\\(all\\)",
+      "text": "Now let's light up the whole board! Type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(all) </b></span>"
+    },
+    {
+      "text": "Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to see it on the board!"
+    }
+  ]
+}

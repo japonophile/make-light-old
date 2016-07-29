@@ -1,0 +1,439 @@
+/*
+# powerup.css
+#
+# Copyright (C) 2015 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+#
+# This controls the styling of the powerup kit window.
+*/
+
+
+/* Styling colors */
+/* ------------------------------------------------------------------ */
+@define-color make_light_top_bar #444444;
+@define-color make_light_view #51555c;
+@define-color make_light_ide #40444A;
+
+@define-color dark_gray_button #7D7D7D;
+@define-color light_gray_button #636A73;
+@define-color orange_button #FF842A;
+@define-color red_button #F37677;
+
+@define-color dark_gray_text #AAAAAA;
+@define-color light_gray_text #E7E7E7;
+
+@define-color main_menu_dark_gray_text #B2B2B2;
+@define-color main_menu_orange_button #FFA462;
+@define-color main_menu_light_gray_button #A1A1A1;
+
+@define-color light_board_gray #596162;
+
+
+/* App Window and its header */
+/* ------------------------------------------------------------------ */
+GtkWindow.make-light {
+    background: @make_light_view;
+}
+
+.make-light-app-header {
+    background: @make_light_top_bar;
+}
+
+.make-light-header-button {
+    background: @make_light_top_bar;
+    font: Bariol bold 22;
+    color: white;
+}
+
+.make-light-close-button {
+    background: @make_light_top_bar;
+    font: monospace 22;
+    color: white;
+}
+
+.make-light-header-button:hover,
+.make-light-close-button:hover {
+    color: @dark_gray_text;
+}
+
+
+
+/* Main Menu (landing page) components */
+/* ------------------------------------------------------------------ */
+
+.main-menu-small-label {
+    font: Bariol 12;
+    color: @main_menu_dark_gray_text;
+}
+
+.main-menu-orange-button {
+    background: @main_menu_orange_button;
+}
+
+.main-menu-gray-button {
+    background: @main_menu_light_gray_button;
+}
+
+.main-menu-orange-button,
+.main-menu-gray-button {
+    font: Bariol 22;
+    color: white;
+    border-radius: 0px;
+}
+
+.main-menu-gray-button.main-menu-small-button {
+    font: Bariol 16;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-menu-orange-button:hover {
+    background: shade(@main_menu_orange_button, 1.1);
+}
+
+.main-menu-gray-button:hover {
+    background: shade(@main_menu_light_gray_button, 1.1);
+}
+
+
+/* HEADER components */
+/* ------------------------------------------------------------------ */
+.header-back-button {
+    background: @dark_gray_button;
+    color: @light_gray_text;
+}
+
+.header-next-button {
+    background: @orange_button;
+    color: white;
+}
+
+.header-back-button,
+.header-next-button {
+    font: Bariol bold 14;
+    border-radius: 0px;
+}
+
+.header-next-button:insensitive {
+    background: @make_light_view;
+    color: @make_light_view;
+}
+
+.header-back-button:hover {
+    background: shade(@dark_gray_button, 1.1);
+}
+
+.header-next-button:hover {
+    background: shade(@orange_button, 1.2);
+}
+
+.header-white-label {
+    color: white;
+}
+
+.header-orange-label {
+    color: @orange_button;
+}
+
+.header-white-label,
+.header-orange-label {
+    font: Bariol 20;
+}
+
+.header-bottom-label {
+    color: @dark_gray_text;
+    font: Bariol 16;
+}
+
+
+/* Challenge Progress Component */
+/* ------------------------------------------------------------------ */
+.challenge-progress-header {
+    background: @light_gray_button;
+}
+
+.challenge-progress-title {
+    font: Bariol 20;
+    color: @orange_button;
+}
+
+.challenge-progress-hint {
+    font: Bariol 16;
+    color: white;
+}
+
+
+/* Light IDE - Code Editor */
+/* ------------------------------------------------------------------ */
+
+
+/* Light IDE - Simulator */
+/* ------------------------------------------------------------------ */
+.light-ide-simulator-footer {
+    background: @light_board_gray;
+}
+
+.light-ide-make-button {
+    background: @orange_button;
+}
+
+.light-ide-stop-button {
+    background: @red_button;
+}
+
+.light-ide-simulator-button {
+    background: @light_gray_button;
+}
+
+.light-ide-make-button,
+.light-ide-stop-button,
+.light-ide-simulator-button {
+    font: Bariol bold 14;
+    color: white;
+    border-radius: 0px;
+}
+
+.light-ide-make-button:insensitive,
+.light-ide-stop-button:insensitive {
+    background: @make_light_ide;
+    color: @make_light_ide;
+}
+
+.light-ide-simulator-button:insensitive {
+    background: @light_board_gray;
+    color: @light_board_gray;
+}
+
+.light-ide-make-button:hover {
+    background: shade(@orange_button, 1.2);
+}
+
+.light-ide-stop-button:hover {
+    background: shade(@red_button, 1.1);
+}
+
+.light-ide-simulator-button:hover {
+    background: shade(@light_gray_button, 1.1);
+}
+
+
+/* SAVE / SHARE dialog styles */
+/* ------------------------------------------------------------------ */
+.dialog {
+    background: #f5f5f5;
+}
+
+.dialog-close-button {
+    background: #f5f5f5;
+}
+
+.dialog-header-text {
+    font: Bariol 22;
+    color: #444444;
+    padding-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* TODO: REFACTOR PENDING BEYOND THIS POINT */
+
+
+/* Text view */
+.code_edit {
+    font-size: 12px;
+    font-family: monospace;
+    color: #555555;
+    padding: 10px;
+}
+
+.code_edit:selected {
+    background-color: white;
+    color: black;
+}
+
+.code_edit, .code_edit.border{
+    background: @make_light_ide;
+    color: white;
+}
+
+.header {
+    background: #444444;
+}
+
+.header GtkLabel {
+    font: Bariol bold 22;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #F5F5F5;
+}
+
+.header * {
+    margin-left: 10px;
+}
+
+.challenge_title2 {
+    font: Bariol bold 14;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #F5F5F5;
+    background: #444444;
+}
+
+.light-ide-header {
+    background: #51555c;
+}
+
+
+/* tutorial widget styles */
+.tutorial_title {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    color: #323332;
+}
+
+.tutorial_text {
+    padding-bottom: 30px;
+    color: #5D5F5D;
+}
+
+
+/* playground mode styles */
+.playground_title {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.tutorial_widget.border {
+    background: #dddddd;
+}
+
+
+.check_code {
+    font: Bariol bold 14px;
+}
+
+.check_code.error {
+    color: shade(@kano_red, 0.6);
+    background: shade(@kano_red, 1.2);
+}
+
+.check_code.success {
+    color: shade(@kano_green, 0.6);
+    background: shade(@kano_green, 1.2);
+}
+
+.unselected {
+    background: #d1d1d1;
+    border-radius: 3px;
+}
+
+.unselected:hover {
+    background: #ff0000;
+    border-radius: 3px;
+}
+
+.selected {
+    background: @kano_orange;
+    border-radius: 5px;
+}
+
+.selected:hover {
+    background: @kano_green;
+    border-radius: 5px;
+}
+
+
+/* Override default Kano TopBar styling by
+   making it all white and hiding the title */
+@define-color top_bar_color #FFF;
+
+
+/* The bar at the top that mimics the window bar */
+.top_bar_container {
+    background: @top_bar_color;
+    border-radius: 0px;
+}
+
+.top_bar_button {
+    background: @top_bar_color;
+    border-radius: 0px;
+}
+
+.top_bar_button:hover {
+    background: @top_bar_color;
+}
+
+/* styles for items in the Welcome screen */
+.welcome_vbox {
+    padding: 0px;
+}
+
+.welcome_top_image {
+    padding-top: 0px;
+}
+
+.tip_title {
+    font: Bariol bold 22;
+    color: #555555;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.tip_description {
+    font: Bariol bold 14;
+    color: #d1d1d1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Header in top bar (title of window) */
+.top_bar_title {
+    color: @top_bar_color;
+    font: Bariol Bold 13;
+}
+
+/* Select Hardware Dialog */
+/* ------------------------------------------------------------------ */
+
+.select-hardware {
+    background: @make_light_view;
+}
+
+.select-hardware GtkLabel {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.select-hardware .board-label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.select-hardware .board-select-button {
+    background: @main_menu_light_gray_button;
+}
+
+
+.select-hardware .board-select-button:hover {
+    background: shade(@main_menu_light_gray_button, 1.1);
+}
+
+/* Challenge Icons */
+/* ------------------------------------------------------------------ */
+
+.challenge-icon {
+    border-radius: 12px;
+    padding: 0;
+}
+
+.challenge-icon.locked {
+    background: #e5e5e5;
+}
+
+.challenge-icon.completed {
+    background: #63ab1f;
+}
+
+.challenge-icon.current {
+    background: #59b3cf;
+}

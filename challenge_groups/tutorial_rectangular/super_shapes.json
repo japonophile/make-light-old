@@ -1,0 +1,14 @@
+{
+  "id": "super_shapes",
+  "title": "Super Shapes",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.rectangle\\([bB]2, *[dD]8\\)",
+      "text": "We can make all sorts of shapes in light too. Let\u2019s start with a rectangle. We need to choose the corners of the rectangle.\nType <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.rectangle(B2, D8) </b></span>"
+    },
+    {
+      "text": "Now press <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>. Now add another rectangle! Use the same code on new lines to add two more rectangles to your board."
+    }
+  ]
+}
