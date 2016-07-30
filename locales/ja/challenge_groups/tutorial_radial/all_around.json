@@ -1,0 +1,30 @@
+{
+  "id": "all_around",
+  "title": "All Around",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.on\\([aA]1, colou?r ?= ?yellow\\)",
+      "text": "All the words next to the lights in your preview screen are the names of each light. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a1, color = yellow) </b></span> to make light A1 turn on."
+    },
+    {
+      "code": "light\\.on\\([aA]3, colou?r ?= ?red\\)",
+      "text": "The light.on command can turn any light on, you just need to tell it the name. Turn on the third light with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a3, color = red) </b></span>."
+    },
+    {
+      "code": "light\\.on\\([aA]5, colou?r ?= ?pink\\)",
+      "text": "Turn on the fifth light with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a5, color = pink) </b></span>."
+    },
+    {
+      "code": "light\\.on\\([aA]7, colou?r ?= ?blue\\)",
+      "text": "Let’s make the seventh light blue with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a7, color = blue) </b></span>."
+    },
+    {
+      "code": "light\\.on\\([aA]9, colou?r ?= ?cyan\\)",
+      "text": "Finally, the ninth light should be cyan.\nType <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a9, color = cyan) </b></span>."
+    },
+    {
+      "text": "See your rainbow come to life by pressing  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>.  Can you fill in the gaps with other lights?"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "painted_red",
+  "title": "Painted Red",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.all\\(colou?r ?= ?red\\)",
+      "text": "Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.all(color = red) </b></span> to make all of the lights red."
+    },
+    {
+      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to run your code! Each “pixel” is actually a red, green, and blue light packed so tightly together you can barely see them. The blue and green lights next to them are turned off."
+    }
+  ]
+}

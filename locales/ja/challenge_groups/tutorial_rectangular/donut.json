@@ -1,0 +1,18 @@
+{
+  "id": "donut",
+  "title": "Donuts",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.circle\\(16, *[eE]8, *on\\)",
+      "text": "Now we are going to use two circles to draw a donut! Draw a big circle in the center of the board. Type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(16, E8, on) </b></span>"
+    },
+    {
+      "code": "light\\.circle\\(8, *[eE]8, *off\\)",
+      "text": "Hit <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> to see your first circle. To finish the donut we need to turn off a circle of lights in the center. You can write the word off at the end of a command to turn lights off.\nOn a new line type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(8, E8, off) </b></span>"
+    },
+    {
+      "text": "Hit  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  again and watch the lights turn off! You can make your line thinner by changing the size of the off circle from 8 to 12."
+    }
+  ]
+}

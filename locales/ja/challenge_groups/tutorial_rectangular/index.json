@@ -1,0 +1,23 @@
+{
+    "world": {
+        "id": "tutorial_rectangular",
+        "title": "LEDライトボードチュートリアル",
+        "description": "コードを光に変えてみよう",
+        "board_type": "Lightboard",
+        "display_order": 1
+    },
+    "challenge_order": [
+      "let_there_be",
+      "all_lights",
+      "make_emoji",
+      "hello_blinky",
+      "super_shapes",
+      "donut",
+      "pacman",
+      "animated_pacman",
+      "say_my_name",
+      "tell_time",
+      "gradients"
+    ],
+    "date_added": "2015-11-09T16:08:45.487Z"
+}

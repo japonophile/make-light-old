@@ -1,0 +1,14 @@
+{
+  "id": "say_my_name",
+  "title": "Say My Name",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.scroll\\(('|\")[^'^\"^\\\\]+('|\")\\)",
+      "text": "Let\u2019s put your name in lights! type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.scroll('Your Name') </b></span> "
+    },
+    {
+      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> and watch your board. Then try changing the text inside of the quotes!"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "light_tour",
+  "title": "Light Tour",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.spin\\(1\\)",
+      "text": "You can spin a light around the speaker ring. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.spin(1) </b></span> to rest one second on each turn of the light."
+    },
+    {
+      "text": "For extra effect, turn out the lights and watch as the Kano takes you on a tour of it’s insides. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>. Slow it down by giving it the number 5."
+    }
+  ]
+}

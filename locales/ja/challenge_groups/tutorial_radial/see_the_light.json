@@ -1,0 +1,14 @@
+{
+  "id": "see_the_light",
+  "title": "See The Light",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.on\\([aA]1\\)",
+      "text": "Your LED speaker has been programmed to normally show your computer’s heartbeat, but it can do whatever you tell it!\nType <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(a1) </b></span> to turn on your first light. When you are done, press  <span foreground='#ffffff' background='#ff842a'><b> ENTER </b></span> to make a new line."
+    },
+    {
+      "text": "Well done. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  and see your light turn on! Pick up your Kano and peer inside to see the LED hiding under the speaker."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "arcs",
+  "title": "Arcs",
+  "description": "",
+  "content": [
+    {
+      "code": "light\\.arc\\([aA]9, [aA]3, colou?r ?= ?magenta\\)",
+      "text": "If you want to turn on a few lights in a row, you can use an arc. It is like a line, and you just need to tell the command a start and end for it. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.arc(a9, a3, color = magenta) </b></span> to turn the top half magenta."
+    },
+	{
+      "code": "light\\.arc\\([aA]4, [aA]8, colou?r ?= ?cyan\\)",
+      "text": "Then type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.arc(a4, a8, color = cyan) </b></span> to turn the bottom half cyan."
+    },
+    {
+      "text": "Well done. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>. Can you get them to animate now?"
+    }
+  ]
+}
