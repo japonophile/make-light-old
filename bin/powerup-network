@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+#
+# powerup-network
+#
+# Copyright (C) 2015 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+#
+# Tool to administer the Powerup Kit networking on the Master kit.
+# It can also be installed on the Slave to display network status information
+
+"""Powerup Networking Controller
+
+Usage:
+    powerup-network (-s | --status)
+    powerup-network (-u | --up)
+    powerup-network (-d | --down)
+
+Options:
+    -s, --status           Display networking status on this Kit
+    -u, --up               Bring the network routing up, start the service
+    -d, --down             Bring the networking down, stop the service
+"""
+
+import os
+import sys
+from docopt import docopt
+
+DIR_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if __name__ == '__main__' and __package__ is None:
+    if DIR_PATH != '/usr':
+        sys.path.insert(1, DIR_PATH)
+
+from powerup_network.ctl import start, stop, status
+
+
+def main(*args, **kwargs):
+    if kwargs.get('--status', False):
+        # The status command will return 0 if running, 1 if stopped
+        return not status()
+    elif kwargs.get('--up', False):
+        return start()
+    elif kwargs.get('--down', False):
+        return stop()
+
+
+if __name__ == '__main__':
+    OPTIONS = docopt(__doc__)
+
+    if main(**OPTIONS):
+        sys.exit(0)
+    else:
+        sys.exit(1)
