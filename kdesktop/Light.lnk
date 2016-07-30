@@ -1,0 +1,12 @@
+table Icon
+  Caption:
+  AppID: make-ligh[t]
+  Command: /usr/bin/kano-launcher "/usr/bin/make-light" "make-light"
+  Singleton: true
+  Icon: /usr/share/kano-desktop/icons/make-light.png
+  IconHover: /usr/share/kano-desktop/icons/make-light-hover.png
+  HoverXOffset: 0
+  Relative-To: grid
+  X: 2
+  Y: 1
+end

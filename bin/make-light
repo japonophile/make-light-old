@@ -1,0 +1,87 @@
+#!/usr/bin/kano-splash /usr/share/make-light/media/images/splash.png /usr/bin/env python
+#
+# make-light
+#
+# Copyright (C) 2015-2016 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+#
+# TODO: description
+
+
+"""Make Light
+
+Usage:
+    make-light [-d | --debug] [-p | --playground-mode | <load_path>]
+
+Options:
+    -p, --playground-mode  Jump straight into Playground Mode
+    -d, --debug            Print debugging information at run time
+"""
+
+
+import os
+import sys
+
+from docopt import docopt
+
+from gi.repository import Gtk, GObject
+
+from kano_profile.tracker import Tracker, track_data
+from kano_profile.challenge_progress_tracker import ChallengeProgressTracker
+
+from kano.utils import run_cmd_log
+
+dir_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if __name__ == '__main__' and __package__ is None:
+    if dir_path != '/usr':
+        sys.path.insert(1, dir_path)
+
+from make_light.gtk3.make_light_main import MakeLightMain
+from make_light.utils import other_similar_process_running, show_error_dialog
+from make_light.errors import ALREADY_RUNNING_ERROR
+
+
+def get_app_version():
+    out, err, rv = run_cmd_log(
+        'dpkg -s "make-light" | grep "Version:" | awk {\'printf "%s", $2\'}'
+    )
+    if rv != 0:
+        return ''
+    return out
+
+GObject.threads_init()
+kanotracker = Tracker()
+progress_tracker = ChallengeProgressTracker()
+
+
+# gracefully handle other instances of the app
+pids = other_similar_process_running()
+if len(pids) == 1:
+    show_error_dialog(ALREADY_RUNNING_ERROR)
+if len(pids) >= 1:
+    sys.exit(ALREADY_RUNNING_ERROR['error_code'])
+
+
+def main(*args, **kwargs):
+
+    win = MakeLightMain(kwargs.get("--debug", False))
+    win.show()
+
+    file_path = kwargs.get("<load_path>", None)
+    if file_path or kwargs.get("--playground-mode", False):
+        win.show_playground(file_path=file_path)
+
+    track_data(
+        'make-light-start-mode',
+        {
+            'deb_version': get_app_version(),
+            'serialAvailable': win.serial_available,
+            'ethernetAvailable': win.ethernet_available
+        }
+    )
+    Gtk.main()
+
+
+if __name__ == "__main__":
+    args = docopt(__doc__)
+    main(**args)
