@@ -102,22 +102,22 @@ class CodeEdit(Gtk.Box):
         """
         if detected and not powerup_available:
             if not setup_complete:
-                message = 'Warming up...'
+                message = _('Warming up...')
             else:
-                message = 'Not connected'
+                message = _('Not connected')
 
             self.make_button.set_sensitive(False)
 
         elif powerup_available:
 
-            message = 'Connected'
+            message = _('Connected')
             self.check_widget.success()
             self.make_button.set_sensitive(True)
 
         else:
-            message = 'Not connected'
+            message = _('Not connected')
 
-        self.check_widget.set_text('The Powerup LED Kit is {}'.format(message))
+        self.check_widget.set_text(_('The Powerup LED Kit is {}').format(message))
 
     def hide_check_widget(self):
         self.check_widget.hide()
@@ -354,7 +354,7 @@ class CheckCodeWidget(Gtk.Label):
         self.set_text("")
 
     def success(self):
-        self.set_text("No errors - your syntax looks good!")
+        self.set_text(_("No errors - your syntax looks good!"))
         self.get_style_context().remove_class("error")
         self.get_style_context().add_class("success")
         self.show_all()

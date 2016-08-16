@@ -1,0 +1,14 @@
+../make_light/errors.py
+../make_light/gtk3/components/app_header.py
+../make_light/gtk3/components/headers.py
+../make_light/gtk3/components/light_ide/code_edit.py
+../make_light/gtk3/components/light_ide/light_ide.py
+../make_light/gtk3/components/light_ide/load_dialog.py
+../make_light/gtk3/components/light_ide/make_button.py
+../make_light/gtk3/components/light_ide/save_dialog.py
+../make_light/gtk3/components/page_control.py
+../make_light/gtk3/components/select_hardware.py
+../make_light/gtk3/views/challenge_list_view.py
+../make_light/gtk3/views/group_list_view.py
+../make_light/gtk3/views/main_menu_view.py
+../make_light/gtk3/views/welcome_window.py

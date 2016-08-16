@@ -63,7 +63,7 @@ class TemplateDialog(Gtk.Dialog):
         window_grid.attach(box, 0, 0, 2, 1)
 
         # the dialog header label
-        header_label = Gtk.Label(title + ' ANIMATION')
+        header_label = Gtk.Label(_('{} ANIMATION').format(title))
         header_label.get_style_context().add_class('dialog-header-text')
         window_grid.attach(header_label, 0, 1, 2, 1)
 
@@ -80,14 +80,14 @@ class TemplateDialog(Gtk.Dialog):
         # 'Title' one line entry
         self.title_entry = Gtk.Entry()
         self.title_entry.set_max_length(200)
-        self.title_entry.set_placeholder_text('Title')
+        self.title_entry.set_placeholder_text(_('Title'))
         self.title_entry.connect('changed', self._validate_input)
         box.pack_start(self.title_entry, False, False, 0)
 
         # 'Description' multiline entry
         self.description_entry = MultilineEntry()
         self.description_entry.set_max_length(500)
-        self.description_entry.set_placeholder_text('Description')
+        self.description_entry.set_placeholder_text(_('Description'))
         box.pack_start(self.description_entry, True, True, 10)
 
         # SHARE / SAVE button
@@ -135,9 +135,9 @@ class TemplateDialog(Gtk.Dialog):
 
 class SaveDialog(TemplateDialog):
     def __init__(self, widget, window):
-        TemplateDialog.__init__(self, widget, window, 'SAVE')
+        TemplateDialog.__init__(self, widget, window, _('Save').upper())
 
 
 class ShareDialog(TemplateDialog):
     def __init__(self, widget, window):
-        TemplateDialog.__init__(self, widget, window, 'SHARE')
+        TemplateDialog.__init__(self, widget, window, _('Share').upper())

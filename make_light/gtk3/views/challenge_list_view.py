@@ -31,9 +31,9 @@ class ChallengeListView(Gtk.Box):
 
         # add a Header to this View
         self.header = ListHeader(
-            white_text='Powerup Kit',
-            orange_text='Beginner Challenges',
-            bottom_text='Select a challenge to start making'
+            white_text=_('Powerup Kit'),
+            orange_text=_('Beginner Challenges'),
+            bottom_text=_('Select a challenge to start making')
         )
         self.pack_start(self.header, False, False, 0)
 
@@ -78,7 +78,7 @@ class ChallengeListView(Gtk.Box):
             )
 
     def __repr__(self):
-        return "{} of group {}".format(
+        return _("{} of group {}").format(
             self.__class__.__name__,
             self.challenge_group.id_str
         )

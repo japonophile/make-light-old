@@ -32,7 +32,7 @@ class SelectHardwareDialog(Gtk.Dialog):
 
         self.content = self.get_content_area()
 
-        label = Gtk.Label('Select Hardware'.upper())
+        label = Gtk.Label(_('Select Hardware').upper())
         label.get_style_context().add_class('title')
         label.get_style_context().add_class('main-menu-small-label')
         self.content.pack_start(label, False, False, 0)

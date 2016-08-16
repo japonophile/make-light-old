@@ -42,7 +42,7 @@ class AppHeader(Gtk.EventBox):
         box.pack_start(logo, False, False, 0)
 
         # the 'Make Light' title button
-        title_button = Gtk.Button('Make Light')
+        title_button = Gtk.Button(_('Make Light'))
         title_button.connect('clicked', self._on_title_button)
         title_button.get_style_context().add_class('make-light-header-button')
         title_button.set_margin_top(10)

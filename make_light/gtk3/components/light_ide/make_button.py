@@ -14,8 +14,8 @@ from kano.gtk3.cursor import attach_cursor_events
 
 class MakeButton(Gtk.Button):
 
-    MAKE_TEXT = 'Make'.upper()  # TODO: i18n
-    KILL_TEXT = 'Stop'.upper()  # TODO: i18n
+    MAKE_TEXT = _('Make').upper()
+    KILL_TEXT = _('Stop').upper()
 
     MAKE_MODE = True  # is False when it is a kill button
 

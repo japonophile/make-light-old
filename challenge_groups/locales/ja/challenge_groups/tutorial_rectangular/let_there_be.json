@@ -5,10 +5,10 @@
   "content": [
     {
       "code": "light\\.on\\([cC]5\\)",
-      "text": "準備はいいかい？光を作っちゃおう！まず、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span>をタイプし、最初のライトをつけてみよう。書き終わったら、<span foreground='#ffffff' background='#ff842a'><b> ENTER </b></span>を押して、次の行に行こう。"
+      "text": "準備はいいかい？光を作っちゃおう！まず、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span>をタイプし、最初のライトをつけてみよう。書き終わったら、<span foreground='#ffffff' background='#ff842a'><b> ENTER </b></span>を押して、次の行へいこう。"
     },
     {
-      "text": "Well done. Now press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  and see your light turn on! Next, change <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> C5 </b></span> to a different number and letter. Look at the letters and numbers around the board for inspiration."
+      "text": "いいね！ 次に、<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押し、ライトを光らせてみよう！ また、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> C5 </b></span>を他の文字と数字に変えてみよう。ボードの周りの文字と数字を参考にしよう。"
     }
   ]
 }

@@ -1,38 +1,38 @@
 {
   "id": "make_emoji",
-  "title": "Make Emoji",
+  "title": "絵文字を作ろう",
   "description": "",
   "content": [
     {
       "code": "light\\.on\\([dD]5\\)",
-      "text": "It\u2019s time to up our game\u2014let\u2019s make a smiley face! To begin, start drawing the left eye. Type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D5) </b></span>"
+      "text": "じゃあ、もっと難しいよ。スマイリーを作ってみよう！まず、左目を書こう。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D5) </b></span>をタイプして。"
     },
     {
       "code": "light\\.on\\([dD]6\\)",
-      "text": "We need to turn on the light underneath also. Add another line of code below by typing: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D6) </b></span>"
+      "text": "その下のライトも点けとかなきゃ。次の行に<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D6) </b></span>をタイプして。"
     },
     {
       "code": "light\\.on\\([dD]7\\)",
-      "text": "One more to go! Type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D7) </b></span>"
+      "text": "さー、もう一つ！<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(D7) </b></span>をタイプして。"
     },
     {
       "code": "light\\.on\\([fF]5\\)",
-      "text": "Great!  Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> to see the eye. We can use the same code to draw the right eye, too. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F5) </b></span> to begin the second eye."
+      "text": "素晴らしい！じゃあ、<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押して、目を見てみよう。そして、同じコードで右目も作っちゃおう。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F5) </b></span>をタイプして、他の目を描き始めよう。"
     },
     {
       "code": "light\\.on\\([fF]6\\)",
-      "text": "And <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F6) </b></span>"
+      "text": "次は、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F6) </b></span>を。"
     },
     {
       "code": "light\\.on\\([fF]7\\)",
-      "text": "Finally, turn on the last light with <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F7) </b></span> to complete the eyes."
+      "text": "最後に、３つ目のライトを<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F7) </b></span>で点けて、目は完成！"
     },
     {
       "code": "light\\.on\\([cC]9, *[dD]10, *[eE]10, *[fF]10, *[gG]9\\)",
-      "text": "The last step is to draw the mouth. There\u2019s a special trick you can use write it faster. Type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C9, D10, E10, F10, G9) </b></span>"
+      "text": "次は、口だ！　ここで速く描く為のコツがあるよ。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C9, D10, E10, F10, G9) </b></span>をタイプしてみよう。"
     },
     {
-      "text": "We\u2019re ready to try it out! Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>. :) Challenge: what other emoji can you make? Can you make a sad face?"
+      "text": "よっし、試してみよう！<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押してみて。　チャレンジ：他の絵文字も描けるかな？悲しい顔は作れるか？"
     }
   ]
 }

@@ -36,7 +36,7 @@ class HeaderTemplate(Gtk.Box):
         # the BACK button
         button_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         button_box.set_valign(Gtk.Align.FILL)
-        self.back_button = Gtk.Button('<   ' + 'Back'.upper())  # TODO: i18n
+        self.back_button = Gtk.Button('<   ' + _('Back').upper())
         self.back_button.connect('clicked', self._back_button_pressed)
         self.back_button.get_style_context().add_class('header-back-button')
         self.back_button.set_size_request(HEADER_BUTTON_WIDTH, HEADER_BUTTON_HEIGHT)
@@ -53,7 +53,7 @@ class HeaderTemplate(Gtk.Box):
         # the NEXT button
         button_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         button_box.set_valign(Gtk.Align.FILL)
-        self.next_button = Gtk.Button('Next'.upper() + '   >')  # TODO: i18n
+        self.next_button = Gtk.Button(_('Next').upper() + '   >')
         self.next_signal_id = self.next_button.connect(
             'clicked',
             self._next_button_pressed
@@ -156,7 +156,7 @@ class ChallengeHeader(HeaderTemplate):
         self.emit('challenge-done')
         self.set_next_button_sensitivity(True)
 
-        next_label = 'DONE' if self.is_final else 'NEXT >'
+        next_label = _('Done').upper() if self.is_final else _('Next').upper() + ' >'
         complete_text = '''
             Click <span foreground='#ffffff'
                         background='#ff842a'
@@ -174,7 +174,7 @@ class ChallengeHeader(HeaderTemplate):
         self.emit('done-button-pressed')
 
     def _replace_next_with_done(self):
-        self.next_button.set_label('Done'.upper())
+        self.next_button.set_label(_('Done').upper())
         self.next_button.disconnect(self.next_signal_id)
         self.next_signal_id = self.next_button.connect(
             'clicked',
@@ -191,7 +191,7 @@ class PlaygroundHeader(HeaderTemplate):
         # compose the middle component for the HeaderTemplate
         middle_component = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
 
-        title = Gtk.Label('Playground')
+        title = Gtk.Label(_('Playground'))
         title.get_style_context().add_class('header-white-label')
         middle_component.pack_start(title, True, True, 0)
 

@@ -14,7 +14,7 @@ class LoadDialog(Gtk.FileChooserDialog):
     def __init__(self, parent=None):
         Gtk.FileChooserDialog.__init__(
             self,
-            'Please choose a file',
+            _('Please choose a file'),
             parent,
             Gtk.FileChooserAction.OPEN, (
                 Gtk.STOCK_CANCEL,

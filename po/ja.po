@@ -1,0 +1,280 @@
+# Japanese translations for make-light package
+# make-light パッケージに対する英訳.
+# Copyright (C) 2016 Kano Computing Ltd.
+# This file is distributed under the same license as the make-light package.
+# Choppin Antoine <antoine@japonophile.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: make-light\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 22:52+0900\n"
+"PO-Revision-Date: 2016-08-16 22:52+0900\n"
+"Last-Translator: Choppin Antoine <antoine@japonophile.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../make_light/errors.py:14
+msgid "Make Light already running!"
+msgstr ""
+
+#: ../make_light/errors.py:15
+msgid "Another instance of Make Light is already running."
+msgstr ""
+
+#: ../make_light/errors.py:19
+msgid "Nothing to save!"
+msgstr ""
+
+#: ../make_light/errors.py:20
+msgid ""
+"If you would like to save your animation, first click MAKE to see\n"
+" it in the Simulator."
+msgstr ""
+
+#: ../make_light/errors.py:25
+msgid "Animation too large!"
+msgstr ""
+
+#: ../make_light/errors.py:26
+msgid "Please try to trim the animation in the code to fewer frames."
+msgstr ""
+
+#: ../make_light/errors.py:30
+msgid "Save already exists!"
+msgstr ""
+
+#: ../make_light/errors.py:31
+msgid ""
+"You have already saved a creation with that title.\n"
+" Please try a different one."
+msgstr ""
+
+#: ../make_light/errors.py:36
+msgid "Too many saves with the same title!"
+msgstr ""
+
+#: ../make_light/errors.py:37
+msgid ""
+"You have exceeded the limit of saves with the same title.\n"
+" Please try a different one."
+msgstr ""
+
+#: ../make_light/errors.py:42
+msgid "Unexpected error occurred!"
+msgstr ""
+
+#: ../make_light/errors.py:43
+msgid ""
+"Unfortunately, this feature has encountered technical issues.\n"
+" We might have already fixed it, so make sure to run Kano Updater\n"
+" and try again."
+msgstr ""
+
+#: ../make_light/errors.py:49
+msgid "Unsupported Board!"
+msgstr ""
+
+#: ../make_light/errors.py:50
+msgid ""
+"Unfortunately, you attempted to change your hardware to a\n"
+" board we don't support in this version of Make Light.\n"
+" Please try updating the app or report this issue."
+msgstr ""
+
+#: ../make_light/errors.py:57
+msgid "You have not saved your work!"
+msgstr ""
+
+#: ../make_light/errors.py:58
+msgid ""
+"If you would like to keep your work, make sure to SAVE it!\n"
+" You can continue working on your creations with a simple LOAD in Playground."
+msgstr ""
+
+#: ../make_light/errors.py:60
+msgid "Save now"
+msgstr ""
+
+#: ../make_light/errors.py:61
+msgid "Discard changes"
+msgstr ""
+
+#: ../make_light/errors.py:62
+msgid "Cancel"
+msgstr ""
+
+#: ../make_light/gtk3/components/app_header.py:45
+msgid "Make Light"
+msgstr ""
+
+#: ../make_light/gtk3/components/headers.py:39
+#: ../make_light/gtk3/components/page_control.py:31
+msgid "Back"
+msgstr ""
+
+#: ../make_light/gtk3/components/headers.py:56
+#: ../make_light/gtk3/components/headers.py:159
+#: ../make_light/gtk3/components/page_control.py:32
+msgid "Next"
+msgstr ""
+
+#: ../make_light/gtk3/components/headers.py:159
+#: ../make_light/gtk3/components/headers.py:177
+msgid "Done"
+msgstr ""
+
+#: ../make_light/gtk3/components/headers.py:194
+msgid "Playground"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/code_edit.py:105
+msgid "Warming up..."
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/code_edit.py:107
+#: ../make_light/gtk3/components/light_ide/code_edit.py:118
+msgid "Not connected"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/code_edit.py:113
+msgid "Connected"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/code_edit.py:120
+msgid "The Powerup LED Kit is {}"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/code_edit.py:357
+msgid "No errors - your syntax looks good!"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/light_ide.py:267
+msgid "Switch Hardware"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/light_ide.py:278
+#: ../make_light/gtk3/components/light_ide/save_dialog.py:143
+msgid "Share"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/light_ide.py:288
+#: ../make_light/gtk3/components/light_ide/save_dialog.py:138
+msgid "Save"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/light_ide.py:298
+msgid "Load"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/load_dialog.py:17
+msgid "Please choose a file"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/make_button.py:17
+msgid "Make"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/make_button.py:18
+msgid "Stop"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/save_dialog.py:66
+msgid "{} ANIMATION"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/save_dialog.py:83
+msgid "Title"
+msgstr ""
+
+#: ../make_light/gtk3/components/light_ide/save_dialog.py:90
+msgid "Description"
+msgstr ""
+
+#: ../make_light/gtk3/components/select_hardware.py:35
+msgid "Select Hardware"
+msgstr ""
+
+#: ../make_light/gtk3/views/challenge_list_view.py:34
+#: ../make_light/gtk3/views/group_list_view.py:32
+msgid "Powerup Kit"
+msgstr ""
+
+#: ../make_light/gtk3/views/challenge_list_view.py:35
+msgid "Beginner Challenges"
+msgstr ""
+
+#: ../make_light/gtk3/views/challenge_list_view.py:36
+msgid "Select a challenge to start making"
+msgstr ""
+
+#: ../make_light/gtk3/views/challenge_list_view.py:81
+msgid "{} of group {}"
+msgstr ""
+
+#: ../make_light/gtk3/views/group_list_view.py:33
+msgid "Challenges"
+msgstr ""
+
+#: ../make_light/gtk3/views/group_list_view.py:34
+msgid "Select a set of challenges to start making"
+msgstr ""
+
+#: ../make_light/gtk3/views/main_menu_view.py:51
+msgid "Welcome"
+msgstr ""
+
+#: ../make_light/gtk3/views/main_menu_view.py:61
+msgid "Change hardware"
+msgstr ""
+
+#: ../make_light/gtk3/views/main_menu_view.py:70
+msgid "Get started"
+msgstr ""
+
+#: ../make_light/gtk3/views/main_menu_view.py:77
+msgid "Play Challenges"
+msgstr ""
+
+#: ../make_light/gtk3/views/main_menu_view.py:85
+msgid "Code in the Playground"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:24
+msgid "Welcome to Make Light"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:26
+msgid "Turn on your lights. Make your kit flicker to life."
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:29
+msgid "Endless Possibilities"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:31
+msgid ""
+"Pick a coding challenge. Learn to do all sorts of exciting things with your "
+"LED lights"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:34
+msgid "Turn Code Into Light"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:36
+msgid ""
+"Complete challenges by typing computer code and clicking on the Make button"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:50
+msgid "CLOSE"
+msgstr ""
+
+#: ../make_light/gtk3/views/welcome_window.py:50
+msgid "START"
+msgstr ""

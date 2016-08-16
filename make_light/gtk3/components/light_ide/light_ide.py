@@ -264,7 +264,7 @@ class TemplateSimulatorFooter(Gtk.Box):
         self.get_style_context().add_class('light-ide-simulator-footer')
 
     def _add_change_hardware_button(self):
-        self.change_hardware_button = Gtk.Button('Switch Hardware'.upper())
+        self.change_hardware_button = Gtk.Button(_('Switch Hardware').upper())
         self.change_hardware_button.set_size_request(-1, HEADER_BUTTON_HEIGHT)
         self.change_hardware_button.set_margin_bottom(self.BUTTON_SPACING)
         self.change_hardware_button.get_style_context().add_class(
@@ -275,7 +275,7 @@ class TemplateSimulatorFooter(Gtk.Box):
         self.pack_start(self.change_hardware_button, True, True, 0)
 
     def _add_share_button(self):
-        self.share_button = Gtk.Button('Share'.upper())  # TODO: i18n
+        self.share_button = Gtk.Button(_('Share').upper())
         self.share_button.set_size_request(-1, HEADER_BUTTON_HEIGHT)
         self.share_button.get_style_context().add_class(
             'light-ide-simulator-button'
@@ -285,7 +285,7 @@ class TemplateSimulatorFooter(Gtk.Box):
         self._h_box.pack_start(self.share_button, True, True, 0)
 
     def _add_save_button(self):
-        self.save_button = Gtk.Button('Save'.upper())  # TODO: i18n
+        self.save_button = Gtk.Button(_('Save').upper())
         self.save_button.set_size_request(-1, HEADER_BUTTON_HEIGHT)
         self.save_button.get_style_context().add_class(
             'light-ide-simulator-button'
@@ -295,7 +295,7 @@ class TemplateSimulatorFooter(Gtk.Box):
         self._h_box.pack_start(self.save_button, True, True, 0)
 
     def _add_load_button(self):
-        self.load_button = Gtk.Button('Load'.upper())  # TODO: i18n
+        self.load_button = Gtk.Button(_('Load').upper())
         self.load_button.set_size_request(-1, HEADER_BUTTON_HEIGHT)
         self.load_button.get_style_context().add_class(
             'light-ide-simulator-button'

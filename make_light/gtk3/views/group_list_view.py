@@ -29,9 +29,9 @@ class GroupListView(Gtk.Box):
 
         # add a Header to this View
         self.header = ListHeader(
-            white_text='Powerup Kit',  # TODO: get these from challenge_group_data
-            orange_text='Challenges',
-            bottom_text='Select a set of challenges to start making'
+            white_text=_('Powerup Kit'),  # TODO: get these from challenge_group_data
+            orange_text=_('Challenges'),
+            bottom_text=_('Select a set of challenges to start making')
         )
         self.pack_start(self.header, False, False, 0)
 

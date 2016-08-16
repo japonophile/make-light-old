@@ -48,7 +48,7 @@ class MainMenuView(Gtk.Box):
 
         # populating the left box
         # TODO: replace this with hardware detection
-        welcome_label = Gtk.Label('Welcome'.upper())  # TODO: i18n
+        welcome_label = Gtk.Label(_('Welcome').upper())
         welcome_label.set_halign(Gtk.Align.START)
         welcome_label.get_style_context().add_class('main-menu-small-label')
         welcome_label.set_margin_bottom(WINDOW_PADDING)
@@ -58,7 +58,7 @@ class MainMenuView(Gtk.Box):
         self._set_placeholder_gif()
         left_box.pack_start(self._placeholder_gif, False, False, 0)
 
-        change_hardware_btn = Gtk.Button('Change hardware'.upper())
+        change_hardware_btn = Gtk.Button(_('Change hardware').upper())
         change_hardware_btn.connect('clicked', self._on_change_hardware_clicked)
         change_hardware_btn.set_size_request(-1, -1)
         change_hardware_btn.get_style_context().add_class('main-menu-gray-button')
@@ -67,14 +67,14 @@ class MainMenuView(Gtk.Box):
         left_box.pack_start(change_hardware_btn, False, False, 0)
 
         # populating the right box
-        get_started_label = Gtk.Label('Get started'.upper())  # TODO: i18n
+        get_started_label = Gtk.Label(_('Get started').upper())
         get_started_label.set_halign(Gtk.Align.START)
         get_started_label.get_style_context().add_class('main-menu-small-label')
         get_started_label.set_margin_bottom(WINDOW_PADDING)
         right_box.pack_start(get_started_label, False, False, 0)
 
         # TODO: use a custom ArrowButton component instead of Gtk.Button
-        self.challenges_button = ArrowButton('Play Challenges')  # TODO: i18n
+        self.challenges_button = ArrowButton(_('Play Challenges'))
         self.challenges_button.set_size_request(-1, MAIN_MENU_BUTTON_HEIGHT)
         self.challenges_button.get_style_context().add_class('main-menu-orange-button')
         self.challenges_button.set_margin_bottom(15)
@@ -82,7 +82,7 @@ class MainMenuView(Gtk.Box):
         attach_cursor_events(self.challenges_button)
         right_box.pack_start(self.challenges_button, False, False, 0)
 
-        self.playground_button = ArrowButton('Code in the Playground')  # TODO: i18n
+        self.playground_button = ArrowButton(_('Code in the Playground'))
         self.playground_button.set_size_request(-1, MAIN_MENU_BUTTON_HEIGHT)
         self.playground_button.get_style_context().add_class('main-menu-gray-button')
         self.playground_button.connect('clicked', self._on_playground_button_clicked)

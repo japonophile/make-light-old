@@ -21,19 +21,19 @@ from kano.gtk3.application_window import ApplicationWindow
 # Previous buttons
 tips = [
     {
-        'title': 'Welcome to Make Light',
+        'title': _('Welcome to Make Light'),
         'image': 'Welcome1.png',
-        'description': 'Turn on your lights. Make your kit flicker to life.'
+        'description': _('Turn on your lights. Make your kit flicker to life.')
     },
     {
-        'title': 'Endless Possibilities',
+        'title': _('Endless Possibilities'),
         'image': 'Welcome2.png',
-        'description': 'Pick a coding challenge. Learn to do all sorts of exciting things with your LED lights'
+        'description': _('Pick a coding challenge. Learn to do all sorts of exciting things with your LED lights')
     },
     {
-        'title': 'Turn Code Into Light',
+        'title': _('Turn Code Into Light'),
         'image': 'Welcome3.png',
-        'description': 'Complete challenges by typing computer code and clicking on the Make button'
+        'description': _('Complete challenges by typing computer code and clicking on the Make button')
     }
 ]
 
@@ -47,7 +47,7 @@ class WelcomeWindow(ApplicationWindow):
 
         # On dialog termination, this flag will say wether to continue or quit
         # the app from whichever button has been selected from the tips flow.
-        self.buttons_quit_continue = ('CLOSE', 'START')
+        self.buttons_quit_continue = (_('CLOSE'), _('START'))
         self.continue_app = True
 
         ApplicationWindow.__init__(self, self.title, -1, -1)
