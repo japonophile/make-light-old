@@ -35,6 +35,12 @@ dir_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if __name__ == '__main__' and __package__ is None:
     if dir_path != '/usr':
         sys.path.insert(1, dir_path)
+        locale_path = os.path.join(dir_path, 'locale')
+    else:
+        locale_path = None
+
+import kano_i18n.init
+kano_i18n.init.install('make-light', locale_path)
 
 from make_light.gtk3.make_light_main import MakeLightMain
 from make_light.utils import other_similar_process_running, show_error_dialog

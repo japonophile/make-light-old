@@ -20,53 +20,59 @@ msgstr ""
 
 #: ../make_light/errors.py:14
 msgid "Make Light already running!"
-msgstr ""
+msgstr "メークライトは既に実行中！"
 
 #: ../make_light/errors.py:15
 msgid "Another instance of Make Light is already running."
-msgstr ""
+msgstr "メークライトの別のインスタンスは既に動いています。"
 
 #: ../make_light/errors.py:19
 msgid "Nothing to save!"
-msgstr ""
+msgstr "保存するものがない！"
 
 #: ../make_light/errors.py:20
 msgid ""
 "If you would like to save your animation, first click MAKE to see\n"
 " it in the Simulator."
 msgstr ""
+"アニメーションを保存するには、まずメークボタンを押して、\n"
+"シミュレーターで確認してください。"
 
 #: ../make_light/errors.py:25
 msgid "Animation too large!"
-msgstr ""
+msgstr "アニメーションは大きすぎます！"
 
 #: ../make_light/errors.py:26
 msgid "Please try to trim the animation in the code to fewer frames."
-msgstr ""
+msgstr "アニメーションをカットし、フレームの枚数を減らしてみてください。"
 
 #: ../make_light/errors.py:30
 msgid "Save already exists!"
-msgstr ""
+msgstr "保存物は既に存在します！"
 
 #: ../make_light/errors.py:31
 msgid ""
 "You have already saved a creation with that title.\n"
 " Please try a different one."
 msgstr ""
+"このタイトルで別の作品が既に保存されています。\n"
+"別のタイトルを使ってみてください。"
 
 #: ../make_light/errors.py:36
 msgid "Too many saves with the same title!"
-msgstr ""
+msgstr "同じタイトルで保存された作品が多すぎます！"
 
 #: ../make_light/errors.py:37
 msgid ""
 "You have exceeded the limit of saves with the same title.\n"
 " Please try a different one."
 msgstr ""
+"同じタイトルでの作品の数が上限を超えてしまいました。\n"
+"別のタイトルを使ってみてください。"
 
 #: ../make_light/errors.py:42
 msgid "Unexpected error occurred!"
-msgstr ""
+msgstr "想定外のエラーが発生しました！"
 
 #: ../make_light/errors.py:43
 msgid ""
@@ -74,10 +80,14 @@ msgid ""
 " We might have already fixed it, so make sure to run Kano Updater\n"
 " and try again."
 msgstr ""
+"申し訳ありませんが、この機能で問題が発生しました。\n"
+"最新版デモン外が既に解決している可能性がありますので、\n"
+"Kanoアップデーターを走らせてから、再度試してみてください。"
+
 
 #: ../make_light/errors.py:49
 msgid "Unsupported Board!"
-msgstr ""
+msgstr "ボードはサポートせれていません！"
 
 #: ../make_light/errors.py:50
 msgid ""
@@ -85,196 +95,203 @@ msgid ""
 " board we don't support in this version of Make Light.\n"
 " Please try updating the app or report this issue."
 msgstr ""
+"このバージョンでまだサポートされていないハードウェアが\n"
+"選択されました。アプリをアップデートするか、問題を\n"
+"報告して下さい。"
 
 #: ../make_light/errors.py:57
 msgid "You have not saved your work!"
-msgstr ""
+msgstr "作品はまだ保存されていません！"
 
 #: ../make_light/errors.py:58
 msgid ""
 "If you would like to keep your work, make sure to SAVE it!\n"
 " You can continue working on your creations with a simple LOAD in Playground."
 msgstr ""
+"この作品を失いたくない場合は、必ず保存するようにして下さい！\n"
+"遊び場でロードしてから、この作品を作り続けることができます。"
 
 #: ../make_light/errors.py:60
 msgid "Save now"
-msgstr ""
+msgstr "今保存する"
 
 #: ../make_light/errors.py:61
 msgid "Discard changes"
-msgstr ""
+msgstr "変更を破棄する"
 
 #: ../make_light/errors.py:62
 msgid "Cancel"
-msgstr ""
+msgstr "取り消し"
 
 #: ../make_light/gtk3/components/app_header.py:45
 msgid "Make Light"
-msgstr ""
+msgstr "メークライト"
 
 #: ../make_light/gtk3/components/headers.py:39
 #: ../make_light/gtk3/components/page_control.py:31
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: ../make_light/gtk3/components/headers.py:56
 #: ../make_light/gtk3/components/headers.py:159
 #: ../make_light/gtk3/components/page_control.py:32
 msgid "Next"
-msgstr ""
+msgstr "次へ"
 
 #: ../make_light/gtk3/components/headers.py:159
 #: ../make_light/gtk3/components/headers.py:177
 msgid "Done"
-msgstr ""
+msgstr "完了"
 
 #: ../make_light/gtk3/components/headers.py:194
 msgid "Playground"
-msgstr ""
+msgstr "遊び場"
 
 #: ../make_light/gtk3/components/light_ide/code_edit.py:105
 msgid "Warming up..."
-msgstr ""
+msgstr "準備中…"
 
 #: ../make_light/gtk3/components/light_ide/code_edit.py:107
 #: ../make_light/gtk3/components/light_ide/code_edit.py:118
 msgid "Not connected"
-msgstr ""
+msgstr "接続されていません"
 
 #: ../make_light/gtk3/components/light_ide/code_edit.py:113
 msgid "Connected"
-msgstr ""
+msgstr "接続されています"
 
 #: ../make_light/gtk3/components/light_ide/code_edit.py:120
 msgid "The Powerup LED Kit is {}"
-msgstr ""
+msgstr "パワーアップLEDキットは{}"
 
 #: ../make_light/gtk3/components/light_ide/code_edit.py:357
 msgid "No errors - your syntax looks good!"
-msgstr ""
+msgstr "エラー無し - 文法は正しいようです！"
 
 #: ../make_light/gtk3/components/light_ide/light_ide.py:267
 msgid "Switch Hardware"
-msgstr ""
+msgstr "ハードウェア切り替え"
 
 #: ../make_light/gtk3/components/light_ide/light_ide.py:278
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:143
 msgid "Share"
-msgstr ""
+msgstr "共有"
 
 #: ../make_light/gtk3/components/light_ide/light_ide.py:288
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:138
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: ../make_light/gtk3/components/light_ide/light_ide.py:298
 msgid "Load"
-msgstr ""
+msgstr "読込"
 
 #: ../make_light/gtk3/components/light_ide/load_dialog.py:17
 msgid "Please choose a file"
-msgstr ""
+msgstr "ファイルを選んで下さい"
 
 #: ../make_light/gtk3/components/light_ide/make_button.py:17
 msgid "Make"
-msgstr ""
+msgstr "メーク"
 
 #: ../make_light/gtk3/components/light_ide/make_button.py:18
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:66
 msgid "{} ANIMATION"
-msgstr ""
+msgstr "{} アニメーション"
 
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:83
 msgid "Title"
-msgstr ""
+msgstr "タイトル"
 
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:90
 msgid "Description"
-msgstr ""
+msgstr "記述"
 
 #: ../make_light/gtk3/components/select_hardware.py:35
 msgid "Select Hardware"
-msgstr ""
+msgstr "ハードウェアを選択して下さい"
 
 #: ../make_light/gtk3/views/challenge_list_view.py:34
 #: ../make_light/gtk3/views/group_list_view.py:32
 msgid "Powerup Kit"
-msgstr ""
+msgstr "パワーアップキット"
 
 #: ../make_light/gtk3/views/challenge_list_view.py:35
 msgid "Beginner Challenges"
-msgstr ""
+msgstr "初心者チャレンジ"
 
 #: ../make_light/gtk3/views/challenge_list_view.py:36
 msgid "Select a challenge to start making"
-msgstr ""
+msgstr "チャレンジを選んで作り始めよう"
 
 #: ../make_light/gtk3/views/challenge_list_view.py:81
 msgid "{} of group {}"
-msgstr ""
+msgstr "{1}グループ中の{0}"
 
 #: ../make_light/gtk3/views/group_list_view.py:33
 msgid "Challenges"
-msgstr ""
+msgstr "チャレンジ"
 
 #: ../make_light/gtk3/views/group_list_view.py:34
 msgid "Select a set of challenges to start making"
-msgstr ""
+msgstr "チャレンジセットを選んで作り始めよう"
 
 #: ../make_light/gtk3/views/main_menu_view.py:51
 msgid "Welcome"
-msgstr ""
+msgstr "ようこそ"
 
 #: ../make_light/gtk3/views/main_menu_view.py:61
 msgid "Change hardware"
-msgstr ""
+msgstr "ハードウェアを変更"
 
 #: ../make_light/gtk3/views/main_menu_view.py:70
 msgid "Get started"
-msgstr ""
+msgstr "始める"
 
 #: ../make_light/gtk3/views/main_menu_view.py:77
 msgid "Play Challenges"
-msgstr ""
+msgstr "チャレンジを挑戦する"
 
 #: ../make_light/gtk3/views/main_menu_view.py:85
 msgid "Code in the Playground"
-msgstr ""
+msgstr "遊び場でコードを書く"
 
 #: ../make_light/gtk3/views/welcome_window.py:24
 msgid "Welcome to Make Light"
-msgstr ""
+msgstr "メークライトへようこそ"
 
 #: ../make_light/gtk3/views/welcome_window.py:26
 msgid "Turn on your lights. Make your kit flicker to life."
-msgstr ""
+msgstr "ライトを点けて。キットをキラキラと生かそう！"
 
 #: ../make_light/gtk3/views/welcome_window.py:29
 msgid "Endless Possibilities"
-msgstr ""
+msgstr "無限の可能性"
 
 #: ../make_light/gtk3/views/welcome_window.py:31
 msgid ""
 "Pick a coding challenge. Learn to do all sorts of exciting things with your "
 "LED lights"
 msgstr ""
+"コードのチャレンジを選ぼう。LEDライトで面白いことを学んでみよう。"
 
 #: ../make_light/gtk3/views/welcome_window.py:34
 msgid "Turn Code Into Light"
-msgstr ""
+msgstr "コードを光に変えよう"
 
 #: ../make_light/gtk3/views/welcome_window.py:36
 msgid ""
 "Complete challenges by typing computer code and clicking on the Make button"
 msgstr ""
+"コードを書いて「メーク」ボタンを押して、チャレンジを完成しよう"
 
 #: ../make_light/gtk3/views/welcome_window.py:50
 msgid "CLOSE"
-msgstr ""
+msgstr "閉じる"
 
 #: ../make_light/gtk3/views/welcome_window.py:50
 msgid "START"
-msgstr ""
+msgstr "スタート"
