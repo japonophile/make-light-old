@@ -33,7 +33,7 @@ setup(name='Make Light',
           'make_light.boards.base', 'make_light.boards.base.colours', 'make_light.boards.base.coords',
           'make_light.boards.base.shapes', 'make_light.boards.router', 'make_light.boards.router.runners',
           'make_light.gif', 'make_light.gtk3', 'make_light.gtk3.components', 'make_light.gtk3.components.light_ide',
-          'make_light.gtk3.views', 'make_light.logic' ],
+          'make_light.gtk3.views', 'make_light.logic', 'powerup_network' ],
       scripts=['bin/make-light'],
       package_data={'make_light': ['media/css/*']},
       data_files=[
