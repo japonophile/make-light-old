@@ -37,7 +37,8 @@ POWERUP_LOCAL_DIRNAME = '.powerup'
 POWERUP_LOCAL_PATH = expanduser(join('~', POWERUP_LOCAL_DIRNAME))
 
 MEDIA_DIR = join(BASE_DIR, 'media')
-CHALLENGES_DIR = join(BASE_DIR, "challenge_groups")
+CHALLENGE_GROUPS = 'challenge_groups'
+CHALLENGES_DIR = join(BASE_DIR, CHALLENGE_GROUPS)
 TEMP_DIR = join('/tmp', 'make-light', get_user_unsudoed())
 SAVE_DIR = join(HOME_DIR, 'Light-content')
 
@@ -49,7 +50,7 @@ ICONS_DIR = join(IMAGES_DIR, 'icons')
 
 # challenges assets
 CHALLENGE_ASSET_DIR = join(IMAGES_DIR, 'challenges')
-CHALLENGE_GROUP_ASSET_DIR = join(IMAGES_DIR, 'challenge_groups')
+CHALLENGE_GROUP_ASSET_DIR = join(IMAGES_DIR, CHALLENGE_GROUPS)
 INDEX_FILE_NAME = "index.json"
 CHALLENGE_FILES_FMT = "{}.json"
 

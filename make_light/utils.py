@@ -5,10 +5,12 @@
 #
 
 
-from os import getpid
+import os
+from gettext import _expand_lang
 
 from kano.gtk3.kano_dialog import KanoDialog
 from kano.utils import run_cmd
+from make_light.paths import CHALLENGES_DIR, CHALLENGE_GROUPS
 
 
 AFFIRMATIVE_ACTION = 1
@@ -72,3 +74,67 @@ def show_confirm_dialog(message, window=None):
     return_value = dialog.run()
 
     return return_value
+
+
+def get_challenges_path():
+    """
+    Construct the challenges path, first looking for any translation,
+    and falling back to the default location.
+
+    Returns:
+        path (str) - the path to the challenges directory
+    """
+
+    challenges_path = CHALLENGES_DIR
+
+    lang_dirs = get_language_dirs()
+
+    for lang_dir in lang_dirs:
+        path_candidate = os.path.join(CHALLENGES_DIR, 'locales', lang_dir, CHALLENGE_GROUPS)
+        if os.path.isdir(path_candidate):
+            challenges_path = path_candidate
+            break
+
+    return challenges_path
+
+
+language_dirs = None
+
+def get_language_dirs():
+    """
+    Get possible language directories to be searched for, based on 
+    the environment variables: LANGUAGE, LC_ALL, LC_MESSAGES and LANG.
+    The result is memoized for future use.
+
+    This function is inspired by python gettext.py.
+
+    Returns:
+        dirs (array) - an array of language directories
+    """
+
+    # TODO: extract in kano-i18n?  This function is also used in Terminal Quest
+
+    global language_dirs
+    if language_dirs is not None:
+        return language_dirs
+
+    languages = []
+    for envar in ('LANGUAGE', 'LC_ALL', 'LC_MESSAGES', 'LANG'):
+        val = os.environ.get(envar)
+        if val:
+            languages = val.split(':')
+            break
+    if 'C' in languages:
+        languages.remove('C')
+
+    # now normalize and expand the languages
+    nelangs = []
+    for lang in languages:
+        for nelang in gettext._expand_lang(lang):
+            if nelang not in nelangs:
+                nelangs.append(nelang)
+
+    language_dirs = nelangs
+    return language_dirs
+
+

@@ -12,9 +12,10 @@ from itertools import ifilter, chain
 
 from kano.logging import logger
 
-from make_light.paths import CHALLENGES_DIR, INDEX_FILE_NAME, \
+from make_light.paths import INDEX_FILE_NAME, \
     ADDITIONAL_CHALLENGE_GROUPS
 from make_light.logic.challenge_group import ChallengeGroup
+from make_light.utils import get_challenges_path
 
 
 class Challenges(object):
@@ -112,9 +113,10 @@ class Challenges(object):
     @staticmethod
     def _dirs_app_installed_iter():
         # First interate over the challenges folder
+        challenges_path = get_challenges_path()
         dir_content = (
-            abspath(join(CHALLENGES_DIR, d))
-            for d in listdir(CHALLENGES_DIR)
+            abspath(join(challenges_path, d))
+            for d in listdir(challenges_path)
         )
         # Get the directories
 
