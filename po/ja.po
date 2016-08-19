@@ -204,7 +204,7 @@ msgstr "停止"
 
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:66
 msgid "{} ANIMATION"
-msgstr "{} アニメーション"
+msgstr "アニメーションを{}"
 
 #: ../make_light/gtk3/components/light_ide/save_dialog.py:83
 msgid "Title"
