@@ -17,7 +17,7 @@
     },
     {
       "code": "light\\.on\\([fF]5\\)",
-      "text": "素晴らしい！じゃあ、<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押して、目を見てみよう。そして、同じコードで右目も作っちゃおう。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F5) </b></span>をタイプして、他の目を描き始めよう。"
+      "text": "素晴らしい！じゃあ、<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押して、目を見てみよう。そして、同じコードで右目も作っちゃおう。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(F5) </b></span>をタイプして、他の目を描き始めよう。"
     },
     {
       "code": "light\\.on\\([fF]6\\)",
@@ -32,7 +32,7 @@
       "text": "次は、口だ！　ここで速く描く為のコツがあるよ。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C9, D10, E10, F10, G9) </b></span>をタイプしてみよう。"
     },
     {
-      "text": "よっし、試してみよう！<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押してみて。　チャレンジ：他の絵文字も描けるかな？悲しい顔は作れるか？"
+      "text": "よっし、試してみよう！<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押してみて。　チャレンジ：他の絵文字も描けるかな？悲しい顔は作れるか？"
     }
   ]
 }

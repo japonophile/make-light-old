@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: make-light\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-16 22:52+0900\n"
+"POT-Creation-Date: 2016-08-19 22:16+0900\n"
 "PO-Revision-Date: 2016-08-16 22:52+0900\n"
 "Last-Translator: Choppin Antoine <antoine@japonophile.com>\n"
 "Language-Team: Japanese\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../make_light/errors.py:14
+#: ../make_light/errors.py:17
 msgid "Make Light already running!"
 msgstr "メークライトは既に実行中！"
 
-#: ../make_light/errors.py:15
+#: ../make_light/errors.py:18
 msgid "Another instance of Make Light is already running."
 msgstr "メークライトの別のインスタンスは既に動いています。"
 
-#: ../make_light/errors.py:19
+#: ../make_light/errors.py:22
 msgid "Nothing to save!"
-msgstr "保存するものがない！"
+msgstr "保存するものが無い！"
 
-#: ../make_light/errors.py:20
+#: ../make_light/errors.py:23
 msgid ""
 "If you would like to save your animation, first click MAKE to see\n"
 " it in the Simulator."
@@ -38,19 +38,19 @@ msgstr ""
 "アニメーションを保存するには、まずメークボタンを押して、\n"
 "シミュレーターで確認してください。"
 
-#: ../make_light/errors.py:25
+#: ../make_light/errors.py:28
 msgid "Animation too large!"
 msgstr "アニメーションは大きすぎます！"
 
-#: ../make_light/errors.py:26
+#: ../make_light/errors.py:29
 msgid "Please try to trim the animation in the code to fewer frames."
 msgstr "アニメーションをカットし、フレームの枚数を減らしてみてください。"
 
-#: ../make_light/errors.py:30
+#: ../make_light/errors.py:33
 msgid "Save already exists!"
 msgstr "保存物は既に存在します！"
 
-#: ../make_light/errors.py:31
+#: ../make_light/errors.py:34
 msgid ""
 "You have already saved a creation with that title.\n"
 " Please try a different one."
@@ -58,23 +58,23 @@ msgstr ""
 "このタイトルで別の作品が既に保存されています。\n"
 "別のタイトルを使ってみてください。"
 
-#: ../make_light/errors.py:36
+#: ../make_light/errors.py:39
 msgid "Too many saves with the same title!"
 msgstr "同じタイトルで保存された作品が多すぎます！"
 
-#: ../make_light/errors.py:37
+#: ../make_light/errors.py:40
 msgid ""
 "You have exceeded the limit of saves with the same title.\n"
 " Please try a different one."
 msgstr ""
-"同じタイトルでの作品の数が上限を超えてしまいました。\n"
+"同じタイトルを持っている作品が多すぎます。\n"
 "別のタイトルを使ってみてください。"
 
-#: ../make_light/errors.py:42
+#: ../make_light/errors.py:45
 msgid "Unexpected error occurred!"
 msgstr "想定外のエラーが発生しました！"
 
-#: ../make_light/errors.py:43
+#: ../make_light/errors.py:46
 msgid ""
 "Unfortunately, this feature has encountered technical issues.\n"
 " We might have already fixed it, so make sure to run Kano Updater\n"
@@ -84,12 +84,11 @@ msgstr ""
 "最新版デモン外が既に解決している可能性がありますので、\n"
 "Kanoアップデーターを走らせてから、再度試してみてください。"
 
-
-#: ../make_light/errors.py:49
+#: ../make_light/errors.py:52
 msgid "Unsupported Board!"
 msgstr "ボードはサポートせれていません！"
 
-#: ../make_light/errors.py:50
+#: ../make_light/errors.py:53
 msgid ""
 "Unfortunately, you attempted to change your hardware to a\n"
 " board we don't support in this version of Make Light.\n"
@@ -99,11 +98,11 @@ msgstr ""
 "選択されました。アプリをアップデートするか、問題を\n"
 "報告して下さい。"
 
-#: ../make_light/errors.py:57
+#: ../make_light/errors.py:60
 msgid "You have not saved your work!"
 msgstr "作品はまだ保存されていません！"
 
-#: ../make_light/errors.py:58
+#: ../make_light/errors.py:61
 msgid ""
 "If you would like to keep your work, make sure to SAVE it!\n"
 " You can continue working on your creations with a simple LOAD in Playground."
@@ -111,15 +110,15 @@ msgstr ""
 "この作品を失いたくない場合は、必ず保存するようにして下さい！\n"
 "遊び場でロードしてから、この作品を作り続けることができます。"
 
-#: ../make_light/errors.py:60
+#: ../make_light/errors.py:63
 msgid "Save now"
 msgstr "今保存する"
 
-#: ../make_light/errors.py:61
+#: ../make_light/errors.py:64
 msgid "Discard changes"
 msgstr "変更を破棄する"
 
-#: ../make_light/errors.py:62
+#: ../make_light/errors.py:65
 msgid "Cancel"
 msgstr "取り消し"
 
@@ -139,11 +138,16 @@ msgid "Next"
 msgstr "次へ"
 
 #: ../make_light/gtk3/components/headers.py:159
-#: ../make_light/gtk3/components/headers.py:177
+#: ../make_light/gtk3/components/headers.py:176
 msgid "Done"
 msgstr "完了"
 
-#: ../make_light/gtk3/components/headers.py:194
+#: ../make_light/gtk3/components/headers.py:160
+#, python-brace-format
+msgid "Click {next_label} to continue"
+msgstr "続くには{next_label}をクリック"
+
+#: ../make_light/gtk3/components/headers.py:193
 msgid "Playground"
 msgstr "遊び場"
 
@@ -265,7 +269,7 @@ msgstr "メークライトへようこそ"
 
 #: ../make_light/gtk3/views/welcome_window.py:26
 msgid "Turn on your lights. Make your kit flicker to life."
-msgstr "ライトを点けて。キットをキラキラと生かそう！"
+msgstr "ライトを点けて。\nLEDキットをキラキラと光らせよう！"
 
 #: ../make_light/gtk3/views/welcome_window.py:29
 msgid "Endless Possibilities"
@@ -275,8 +279,7 @@ msgstr "無限の可能性"
 msgid ""
 "Pick a coding challenge. Learn to do all sorts of exciting things with your "
 "LED lights"
-msgstr ""
-"コードのチャレンジを選ぼう。LEDライトで面白いことを学んでみよう。"
+msgstr "コードのチャレンジを選ぼう。\nLEDで面白い技を学んでみよう。"
 
 #: ../make_light/gtk3/views/welcome_window.py:34
 msgid "Turn Code Into Light"
@@ -285,8 +288,7 @@ msgstr "コードを光に変えよう"
 #: ../make_light/gtk3/views/welcome_window.py:36
 msgid ""
 "Complete challenges by typing computer code and clicking on the Make button"
-msgstr ""
-"コードを書いて「メーク」ボタンを押して、チャレンジを完成しよう"
+msgstr "チャレンジを完成させるには、\nコードを書いて「メーク」ボタンで実行しよう"
 
 #: ../make_light/gtk3/views/welcome_window.py:50
 msgid "CLOSE"

@@ -5,10 +5,10 @@
   "content": [
     {
       "code": "light\\.on\\(all\\)",
-      "text": "次は、ボードの全てのライトをつけちゃおう！<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(all) </b></span>"
+      "text": "次は、ボードの全てのライトを点けちゃおう！<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(all) </b></span>"
     },
     {
-      "text": "では、<span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>を押し、ボードを見てみよう！"
+      "text": "では、<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押し、ボードを見てみよう！"
     }
   ]
 }

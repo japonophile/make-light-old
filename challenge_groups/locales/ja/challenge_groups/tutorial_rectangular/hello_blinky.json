@@ -1,30 +1,30 @@
 {
   "id": "hello_blinky",
-  "title": "Hello blinky",
+  "title": "ハロー点滅",
   "description": "",
   "content": [
     {
       "code": "while True\\:",
-      "text": "We\u2019ve got the basics down, now let\u2019s put on a blinking light show. We will use a loop, type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> while True: </b></span>"
+      "text": "基礎を学んできた。次は、点滅ライトショーを作ってみよう。その為にループを使う：<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> while True: </b></span>をタイプして。"
     },
     {
       "code": "\\tlight\\.on\\([cC]5\\)",
-      "text": "See how your cursor is moved over automatically? You are now in a \u201cloop.\u201d Type  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span>"
+      "text": "カーソルが自動的に動いたね！ここで「ループ」の中にいるの。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on(C5) </b></span>をタイプしよう。"
     },
     {
       "code": "\\tsleep\\(1\\)",
-      "text": "Let\u2019s wait for a second between flashes. You can tell the computer to wait by typing  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>, which will make the computer wait for one second."
+      "text": "点滅の間に１秒待とう。パソコンに待ってもらう為に、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>をタイプする。これでパソコンは１秒待つことになるんだ。"
     },
     {
       "code": "\\tlight\\.off\\([cC]5\\)",
-      "text": "We make the lights flash by turning them on, and now turning them off. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off(C5) </b></span>, which turns all the lights off."
+      "text": "ライトを点滅させるには、ライトを点けて、そしてライトを消すんだ。じゃあ、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off(C5) </b></span>をタイプして、ライトを消してみよう。"
     },
     {
       "code": "\\tsleep\\(1\\)",
-      "text": "Finally, should wait one second after the lights turn off before the loop starts over and turns the lights back on. Type <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>."
+      "text": "最後に、ライトを消した後にも、ループを続けてライトをまた点ける前に、もう１秒待たなきゃいけない。<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> sleep(1) </b></span>をタイプしよう。"
     },
     {
-      "text": "Press <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> and watch your board! What patterns can you make when you give <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on() </b></span> and <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off() </b></span> a different coordinate?"
+      "text": "よっし、<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押して、ボードを確認しよう！ <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.on() </b></span>と<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.off() </b></span>に違う位置を指定すると、どんなパターンができるかな？"
     }
   ]
 }
