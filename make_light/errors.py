@@ -9,55 +9,58 @@
 #
 # NOTE: To prevent the dialog from stretching, \n has been used
 
+import __builtin__
+__builtin__.__dict__['N_'] = lambda msg: msg
+
 
 ALREADY_RUNNING_ERROR = {
-    'title': _('Make Light already running!'),
-    'description': _('Another instance of Make Light is already running.'),
+    'title': N_('Make Light already running!'),
+    'description': N_('Another instance of Make Light is already running.'),
     'error_code': 1
 }
 NO_FRAMES_ERROR = {
-    'title': _('Nothing to save!'),
-    'description': _('If you would like to save your animation, first click MAKE to see'
+    'title': N_('Nothing to save!'),
+    'description': N_('If you would like to save your animation, first click MAKE to see'
                      '\n it in the Simulator.'),
     'error_code': 0
 }
 SIZE_REQ_ERROR = {
-    'title': _('Animation too large!'),
-    'description': _('Please try to trim the animation in the code to fewer frames.'),
+    'title': N_('Animation too large!'),
+    'description': N_('Please try to trim the animation in the code to fewer frames.'),
     'error_code': 0
 }
 SAVE_EXISTS_ERROR = {
-    'title': _('Save already exists!'),
-    'description': _('You have already saved a creation with that title.'
+    'title': N_('Save already exists!'),
+    'description': N_('You have already saved a creation with that title.'
                      '\n Please try a different one.'),
     'error_code': 0
 }
 RENAME_LIMIT_ERROR = {
-    'title': _('Too many saves with the same title!'),
-    'description': _('You have exceeded the limit of saves with the same title.'
+    'title': N_('Too many saves with the same title!'),
+    'description': N_('You have exceeded the limit of saves with the same title.'
                      '\n Please try a different one.'),
     'error_code': 0
 }
 UNEXPECTED_ERROR = {
-    'title': _('Unexpected error occurred!'),
-    'description': _('Unfortunately, this feature has encountered technical issues.'
+    'title': N_('Unexpected error occurred!'),
+    'description': N_('Unfortunately, this feature has encountered technical issues.'
                      '\n We might have already fixed it, so make sure to run Kano Updater'
                      '\n and try again.'),
     'error_code': 0
 }
 UNSUPPORTED_BOARD_ERROR = {
-    'title': _('Unsupported Board!'),
-    'description': _("Unfortunately, you attempted to change your hardware to a"
+    'title': N_('Unsupported Board!'),
+    'description': N_("Unfortunately, you attempted to change your hardware to a"
                      "\n board we don't support in this version of Make Light."
                      "\n Please try updating the app or report this issue."
                      ),
     'error_code': 0
 }
 NOT_SAVED_WARNING = {
-    'title': _('You have not saved your work!'),
-    'description': _('If you would like to keep your work, make sure to SAVE it!'
+    'title': N_('You have not saved your work!'),
+    'description': N_('If you would like to keep your work, make sure to SAVE it!'
                      '\n You can continue working on your creations with a simple LOAD in Playground.'),
-    'affirmative_button': _('Save now').upper(),
-    'negative_button': _('Discard changes').upper(),
-    'abort_button': _('Cancel').upper()
+    'affirmative_button': N_('Save now'),
+    'negative_button': N_('Discard changes'),
+    'abort_button': N_('Cancel')
 }

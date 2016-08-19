@@ -157,14 +157,13 @@ class ChallengeHeader(HeaderTemplate):
         self.set_next_button_sensitivity(True)
 
         next_label = _('Done').upper() if self.is_final else _('Next').upper() + ' >'
-        complete_text = '''
-            Click <span foreground='#ffffff'
-                        background='#ff842a'
-                        face='monospace'
-                        size='smaller'
-                        font-weight='bold'
-            > {next_label} </span> to continue
-        '''.format(next_label=next_label).strip()
+        complete_text = _('Click {next_label} to continue')\
+            .format(next_label=u'''<span foreground='#ffffff'
+                                         background='#ff842a'
+                                         size='smaller'
+                                         font-weight='bold'
+                                   > {} </span>'''\
+                                   .format(next_label).strip())
         self.challenge_progress.tutorial_text.set_markup(complete_text)
 
     def on_code_changed(self, code_edit, ignored):

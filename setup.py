@@ -5,8 +5,10 @@ import setuptools
 import os
 import sys
 
-if '--install-scripts' not in sys.argv:
+if 'install' in sys.argv and '--install-scripts' not in sys.argv:
     sys.argv.append('--install-scripts=/usr/bin')
+if 'install' in sys.argv and '--install-lib' not in sys.argv:
+    sys.argv.append('--install-lib=/usr/lib/python2.7/dist-packages')
 
 def get_locales():
     locale_dir = 'locale'

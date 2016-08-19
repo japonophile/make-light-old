@@ -6,7 +6,7 @@
 
 
 import os
-from gettext import _expand_lang
+import gettext
 
 from kano.gtk3.kano_dialog import KanoDialog
 from kano.utils import run_cmd
@@ -21,7 +21,7 @@ ABORT_ACTION = -1
 def other_similar_process_running():
     result, d1, d2 = run_cmd("pgrep -f '^python.*[^:]make-light\W?$'")
     pids = [int(pid) for pid in result.strip().splitlines()
-            if int(pid) != getpid()]
+            if int(pid) != os.getpid()]
     return pids
 
 
@@ -30,11 +30,11 @@ def show_error_dialog(error, window=None):
     This can be used to display an error from errors.py
     """
     error_dialog = KanoDialog(
-        title_text=error['title'],
-        description_text=error['description'],
+        title_text=_(error['title']),
+        description_text=_(error['description']),
         button_dict={
             'OK': {
-                'label': 'OK',
+                'label': _('OK'),
                 'color': 'red'
             }
         },
@@ -52,18 +52,18 @@ def show_confirm_dialog(message, window=None):
     """
 
     dialog = KanoDialog(
-        title_text=message['title'],
-        description_text=message['description'],
+        title_text=_(message['title']),
+        description_text=_(message['description']),
         button_dict={
-            message['affirmative_button']: {
+            _(message['affirmative_button']).upper(): {
                 'color': 'green',
                 'return_value': AFFIRMATIVE_ACTION
             },
-            message['negative_button']: {
+            _(message['negative_button']).upper(): {
                 'color': 'red',
                 'return_value': NEGATIVE_ACTION
             },
-            message['abort_button']: {
+            _(message['abort_button']).upper(): {
                 'color': 'red',
                 'return_value': ABORT_ACTION
             }
