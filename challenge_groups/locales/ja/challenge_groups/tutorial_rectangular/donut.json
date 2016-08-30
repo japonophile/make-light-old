@@ -1,18 +1,18 @@
 {
   "id": "donut",
-  "title": "Donuts",
+  "title": "ドーナッツ",
   "description": "",
   "content": [
     {
       "code": "light\\.circle\\(16, *[eE]8, *on\\)",
-      "text": "Now we are going to use two circles to draw a donut! Draw a big circle in the center of the board. Type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(16, E8, on) </b></span>"
+      "text": "２つの円形を使ってドーナッツを描こう！まずボードの真ん中に大きな円を描こう：<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(16, E8, on) </b></span>をタイプして。"
     },
     {
       "code": "light\\.circle\\(8, *[eE]8, *off\\)",
-      "text": "Hit <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> to see your first circle. To finish the donut we need to turn off a circle of lights in the center. You can write the word off at the end of a command to turn lights off.\nOn a new line type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(8, E8, off) </b></span>"
+      "text": "<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押して最初の円形を見てみよう。ドーナッツを完成させるには真ん中のライトを消す必要があるね。off（オフ）と言う単語をコマンドの後ろに書けば、ライトを消すことができる。\n次の行で<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(8, E8, off) </b></span>をタイプしてみよう。"
     },
     {
-      "text": "Hit  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  again and watch the lights turn off! You can make your line thinner by changing the size of the off circle from 8 to 12."
+      "text": "もう一度<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押して、ライトが消されることを確認しよう。また、線を細くするには、中の円形の大きさを8から12に変えれば良い。"
     }
   ]
 }

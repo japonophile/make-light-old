@@ -1,14 +1,14 @@
 {
   "id": "say_my_name",
-  "title": "Say My Name",
+  "title": "私の名前",
   "description": "",
   "content": [
     {
       "code": "light\\.scroll\\(('|\")[^'^\"^\\\\]+('|\")\\)",
-      "text": "Let\u2019s put your name in lights! type: <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.scroll('Your Name') </b></span> "
+      "text": "君の名前をライトで書いてみよう！<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.scroll('Your Name') </b></span> をタイプして。"
     },
     {
-      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span> and watch your board. Then try changing the text inside of the quotes!"
+      "text": "<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押してボードを見てみて。そして、クォーツの間の文字を変えてみて！"
     }
   ]
 }

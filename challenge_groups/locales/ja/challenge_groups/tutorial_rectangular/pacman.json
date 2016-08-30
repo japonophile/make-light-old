@@ -1,18 +1,18 @@
 {
   "id": "pacman",
-  "title": "Pacman",
+  "title": "パックマン",
   "description": "",
   "content": [
     {
       "code": "light\\.circle\\(12, *[eE]8, *on\\)",
-      "text": "Let\u2019s use some more shapes to make a picture! Circle works the same way as square - a size, starting location and on/off.\nType  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(12, E8, on) </b></span>"
+      "text": "他の形を使って、絵を作ってみよう！円形は四角形と同じで、大きさとスタート地点とon又はoffで定義する。\n<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.circle(12, E8, on) </b></span>をタイプしよう。"
     },
     {
       "code": "light\\.triangle\\([fF]8, *[hH]5, *[hH]11, *off\\)",
-      "text": "There\u2019s a triangle too! Type  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.triangle(F8, H5, H11, off) </b></span> to make Pacman\u2019s mouth. The three coordinates are the corners of the triangle!"
+      "text": "三角形も描けますよ！パックマン君のお口を描くには、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.triangle(F8, H5, H11, off) </b></span>をタイプしよう。３つの点は、三角形の頂点を表している。"
     },
     {
-      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to see your finished Pacman!"
+      "text": "最後に、<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押して、パックマン君の出来上がり！"
     }
   ]
 }

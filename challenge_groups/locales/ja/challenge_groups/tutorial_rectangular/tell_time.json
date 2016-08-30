@@ -1,22 +1,22 @@
 {
   "id": "tell_time",
-  "title": "Tell the Time",
+  "title": "時間を教えて",
   "description": "",
   "content": [
     {
       "code": "mytime *= *timenow\\(\\)",
-      "text": "Your lightboard isn\u2019t just for pictures though - it can be smart!\nType:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> mytime = timenow() </b></span>"
+      "text": "君のライトボードは、絵を描くためだけじゃないよ。結構頭いいぞ！\n<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> mytime = timenow() </b></span>をタイプして。"
     },
     {
       "code": "message *= *'Time *: *' *\\+ *mytime",
-      "text": "Type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> message = 'Time : ' + mytime </b></span>"
+      "text": "次は、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> message = 'Time : ' + mytime </b></span>をタイプして。"
     },
     {
       "code": "light\\.scroll\\(message\\)",
-      "text": "Type:  <span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.scroll(message) </b></span>"
+      "text": "そして、<span foreground='#ffffff' background='#59b3d0' face='monospace' size='smaller'><b> light.scroll(message) </b></span>をタイプして。"
     },
     {
-      "text": "Press  <span foreground='#ffffff' background='#ff842a'><b> MAKE </b></span>  to see your clock!"
+      "text": "よっし、時計を見るには<span foreground='#ffffff' background='#ff842a'><b> メーク </b></span>を押してみて！"
     }
   ]
 }
